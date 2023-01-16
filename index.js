@@ -3,7 +3,9 @@ import mqtt from "mqtt";
 let level = 10;
 let status = "rising";
 
-let client = mqtt.connect("mqtt://localhost:1883");
+let client = mqtt.connect(
+  "mqtt://1387b8aada2e4198970f3b56103589c6.s2.eu.hivemq.cloud:8883"
+);
 
 client.on("connect", function () {
   // Check MQTT server connection
@@ -21,7 +23,7 @@ client.on("connect", function () {
         console.log(`New level : ${level}`);
       }
 
-      if (level == 90) {
+      if (level == 70) {
         console.log(`Changing status to falling`);
         status = "falling";
       }
