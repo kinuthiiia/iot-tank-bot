@@ -5,7 +5,7 @@ let status = "rising";
 
 let options = {
   host: "1387b8aada2e4198970f3b56103589c6.s2.eu.hivemq.cloud",
-  port: 8883,
+  // port: 8883,
   protocol: "mqtts",
   username: "skinuthia800",
   password: "Gearbox001",
